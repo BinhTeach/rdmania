@@ -1,0 +1,52 @@
+
+body{
+    background-color: #ABD1C6;
+    color: #fffffe;
+}
+ul{
+    list-style: none;
+}
+#header{
+    margin: 0 auto;
+    width: 60%;
+    background-color: #004643;
+    height: 150px;
+}
+.header--container{
+    display: flex;
+}
+.header__title--logo{
+    border-radius: 100%;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+}
+.header__nav{
+    display:flex;
+    flex-direction: row;
+}
+.header__nav--find{
+    border-radius: 30px;
+}
+.header__nav--icon{
+
+}
+.fa-solid{
+
+}
+.fa-user{
+
+}
+.header__nav--titleSymbol{
+
+}
+.fa-bell{
+
+}
+.fa-cart-shopping{
+
+}
+.header__nav{
+
+}

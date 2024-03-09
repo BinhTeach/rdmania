@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDMania Store</title>
+    <link rel="stylesheet" href="../Css/styles.css">
+    <script src="https://kit.fontawesome.com/45c2fe20a1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="../Image/logo.png">
+    <script src="../Script/main.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/algeria" rel="stylesheet">
+</head>
+<body>
+     <div id="header">
+          <div class="header--container">
+               <img onclick="appearMenu()" src="../Image/logo.png" alt="">
+               <div class="header__title--logo">RD <br/> MANIA</div>
+               <nav>
+                    <ul class="header__nav header__nav--up">
+                         <li> 
+                              <input class="header__nav--find" type="text" placeholder="Hãy tìm lại chính bạn!">
+                         </li>
+                         <li class="header__nav--icon"><i class="fa-solid fa-bell"></i></li>
+                         <li class="header__nav--titleSymbol">Thông báo</li>
+                         <li class="header__nav--icon"><i class="fa-solid fa-cart-shopping"></i></i></li>
+                         <li class="header__nav--titleSymbol">Giỏ hàng</li>
+                         <li class="header__nav--icon " name="history-bill"><i class="fa-solid fa-money-bill"></i></li>
+                         <li class="header__nav--titleSymbol">Lịch sử</li>
+                         <li class="header__nav--icon fa-user--up" name='user'><i class="fa-solid fa-user"></i></li>
+                    </ul>
+                    <ul class="header__nav--center">
+                         <li class="header__nav--menu"><a href="">Cửa hàng</a></li>
+                         <li class="header__nav--menu" id="sideBar__hidden"><span>Danh Mục</span>
+                              <div id="sideBar-main">
+                                   <ul>
+                                        <li class="sideBar__header--element">
+                                             <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                             <ul class="sideBar__dropList sideBar__dropList--first">
+                                                  <li class="sideBar__dropList--sub"><a href="">Dx</a></li>
+                                                  <li class="sideBar__dropList--sub"><a href="">Csm</a></li>
+                                             </ul>
+                                        </li>
+                                   </ul>
+                                   <ul>
+                                        <li class="sideBar__header--element">
+                                             <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                             <ul class="sideBar__dropList">
+                                                  <li class="si\deBar__dropList--sub"><a href="">Dx</a></li>
+                                                  <li class="si\deBar__dropList--sub"><a href="">Csm</a></li>
+                                             </ul>
+                                        </li>
+                                   </ul>
+                                   <ul>
+                                        <li class="sideBar__header--element">
+                                             <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                             <ul class="sideBar__dropList">
+                                                  <li class="si\deBar__dropList--sub"><a href="">Dx</a></li>
+                                                  <li class="si\deBar__dropList--sub"><a href="">Csm</a></li>
+                                             </ul>
+                                        </li>
+                                   </ul>
+                                   <ul>
+                                        <li class="sideBar__header--element">
+                                             <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                             <ul class="sideBar__dropList">
+                                                  <li class="si\deBar__dropList--sub"><a href="">Dx</a></li>
+                                                  <li class="si\deBar__dropList--sub"><a href="">Csm</a></li>
+                                             </ul>
+                                        </li>
+                                   </ul>
+                                   <ul>
+                                        <li class="sideBar__header--element">
+                                             <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                             <ul class="sideBar__dropList sideBar__dropList--last">
+                                                  <li class="si\deBar__dropList--sub"><a href="">Dx</a></li>
+                                                  <li class="si\deBar__dropList--sub"><a href="">Csm</a></li>
+                                             </ul>
+                                        </li>
+                                   </ul>
+                              </div>              
+                         </li>
+                         <li class="header__nav--menu"><a href="">Ưa thích</a></li>
+                         <li class="header__nav--menu"><a href="">Liên hệ</a></li>
+                         <li class="header__nav--menu"><a href="">Thêm</a></li>
+                    </ul>             
+               </nav>
+          </div>
+          <ul class="header__nav--down">
+               <li class="header__nav--address">Đại học Thủ Dầu Một</li>
+               <li class="header__nav--premium">Premium</li>
+          </ul>
+     </div>
+     <div id="myElement"></div>
+<button onclick="changeBorder()">Thay đổi border</button>
+</body>
+<script>
+     function changeBorder() {
+  var element = document.getElementById("myElement");
+  element.style.width = "1px solid red";
+}
+     var bl = false;
+     window.addEventListener('load', function(){
+          if(innerWidth < 768){
+               if(bl === false){
+                    appearMenu();
+                    bl = true;
+                    
+               }
+               deleteTag_br();      
+          }
+          else{
+               addTag_br();
+          }
+     })
+     window.addEventListener('resize', function(){
+          if(innerWidth < 768){
+               if(bl === false){
+                    appearMenu();
+                    bl = true;
+                    
+               }
+               deleteTag_br();      
+          }
+          else{
+               addTag_br();
+          }
+     })
+          
+     function appearMenu() {
+          var parentElement = document.getElementsByClassName('header--container')[0];
+          var newDiv = document.createElement('div');
+          parentElement.appendChild(newDiv);
+          newDiv.classList.add('iconMenu');
+          newDiv.innerHTML = '&#9776;';
+          newDiv.id = "newMenu";
+          newDiv.addEventListener('click', clickMenu);
+          document.documentElement.style.setProperty('--set-Width', window.innerWidth + 'px');
+               var element = document.getElementsByClassName('header__nav--icon')[0]; 
+     }
+     function clickMenu() {
+          let clickMenu = document.getElementsByClassName('header__nav--icon');
+          for(let element of clickMenu){
+               element.style.display = 'block';
+          }
+          let noneMenu = document.getElementsByClassName('iconMenu')[0];
+          noneMenu.style.display ='none';
+          let userUp = document.getElementsByClassName('header__nav--icon')[3];
+          userUp.classList.add('fa-user--up');
+     }
+     var clickMenulist = document.getElementsByClassName('header__nav--menu')[1];
+     var clickMenulist__check = false;
+     clickMenulist.addEventListener('click', function(){
+          if(clickMenulist__check === false){
+               let appear = document.getElementById('sideBar__hidden');
+               appear.id='sideBar__appear';
+               clickMenulist__check = true;
+               appear = document.getElementById('sideBar__appear');
+               changeAppear = appear.querySelector('div');
+               changeAppear.style.width='1024px';
+               changeAppear.style.height='235px';
+               // appear.classList.add('active');
+               appear = document.getElementsByClassName('sideBar__dropList');
+               for(var i = 0; i < appear.length - 1; i++){
+                    appear[i].classList.add('active');
+               }
+               
+          }
+          else{
+               let hidden = document.getElementById('sideBar__appear');
+               hidden.id='sideBar__hidden';
+               clickMenulist__check = false;
+               hidden = document.getElementById('sideBar__hidden');
+               hidden.classList.remove('active');
+               hidden = document.getElementsByClassName('sideBar__dropList');
+               for(var i = 0; i < hidden.length - 1; i++){
+                    hidden[i].classList.add('active');
+               }
+          }
+     })
+     function deleteTag_br(){
+          let del = document.getElementsByClassName('header__title--logo')[0];
+          del.innerHTML = "RD MANIA";
+     }
+     function addTag_br(){
+          let add = document.getElementsByClassName('header__title--logo')[0];
+          add.innerHTML ="";
+          add.innerHTML = "RD <br/> MANIA";
+     }
+     </script>
+</html>

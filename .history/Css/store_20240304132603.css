@@ -1,0 +1,31 @@
+.bannerSlide{
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+.bannerSlide__images{
+    display: flex;
+    fl
+}
+.bannerSlide__image{
+
+}
+.bannerSilde__btn{
+
+}
+.bannerSlide__btn{
+
+}
+.btnSlide--left{
+
+}
+.btnSlide--right{
+
+}
+.bannerSlide__index{
+
+}
+.bannerSlide__index--sub{
+
+}

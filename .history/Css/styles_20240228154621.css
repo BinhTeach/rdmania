@@ -1,0 +1,9 @@
+body{
+    background-color: #ABD1C6;
+}
+#header{
+    margin: 0 auto;
+    width: 60%;
+    background-color: #004643;
+    height: 150px;
+}

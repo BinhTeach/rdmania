@@ -1,0 +1,43 @@
+body{
+    background-color: #ABD1C6;
+    color: #fffffe;
+}
+#header{
+    margin: 0 auto;
+    width: 60%;
+    background-color: #004643;
+    height: 150px;
+}
+.header--container{
+    margin:20px;
+}
+.header__title--logo{
+    border-radius: 100%;
+}
+nav{
+    display:flex;
+    flex
+}
+.header__nav{
+}
+.header__find{
+
+}
+.header__icon{
+
+}
+.fa-solid{
+
+}
+.fa-user{
+
+}
+.header__title--symbol{
+
+}
+.fa-bell{
+
+}
+.fa-cart-shopping{
+
+}

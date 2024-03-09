@@ -1,0 +1,1 @@
+var A = "Xin chao'

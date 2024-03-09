@@ -1,0 +1,3 @@
+//Object
+
+var myLife

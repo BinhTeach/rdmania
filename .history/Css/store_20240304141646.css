@@ -1,0 +1,41 @@
+.bannerSlide{
+    /* Chỉnh khi chuyển gốc */ 
+    overflow: hidden;
+    image-rendering: pixelated;
+    width: 900px;
+    height: 300px;
+    position: relative;
+}
+.bannerSlide__images{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+.bannerSlide__image{
+    /* Chỉnh khi chuyển gốc */
+    
+}
+.bannerSilde__btn{
+
+}
+.bannerSlide__btn{
+    position: absolute;
+    top:50%;
+}
+.btnSlide--left{
+    position: absolute;
+    top:50%;
+}
+.btnSlide--right{
+    position: absolute;
+}
+.bannerSlide__index{
+
+}
+.bannerSlide__index--sub{
+
+}

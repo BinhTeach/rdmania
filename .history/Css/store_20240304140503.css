@@ -1,0 +1,32 @@
+.bannerSlide{
+    /* Chỉnh khi chuyển gốc */ 
+    width: 1000px;
+    
+    image-rendering: pixelated;
+}
+.bannerSlide__images{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.bannerSlide__image{
+    /* Chỉnh khi chuyển gốc */
+}
+.bannerSilde__btn{
+
+}
+.bannerSlide__btn{
+
+}
+.btnSlide--left{
+
+}
+.btnSlide--right{
+
+}
+.bannerSlide__index{
+
+}
+.bannerSlide__index--sub{
+
+}

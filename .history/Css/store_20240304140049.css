@@ -1,0 +1,34 @@
+.bannerSlide{
+    /* Chỉnh khi chuyển gốc */ 
+    width: 500px;
+    height: auto;
+    overflow: hidden;
+    image-rendering: pixelated;
+}
+.bannerSlide__images{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: start;
+}
+.bannerSlide__image{
+    /* Chỉnh khi chuyển gốc */
+}
+.bannerSilde__btn{
+
+}
+.bannerSlide__btn{
+
+}
+.btnSlide--left{
+
+}
+.btnSlide--right{
+
+}
+.bannerSlide__index{
+
+}
+.bannerSlide__index--sub{
+
+}

@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cửa hàng</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/store.css">
+    <link rel="stylesheet" href="../Css/premium.css">
+    <script src="https://kit.fontawesome.com/45c2fe20a1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="../Image/logo.png">
+    <script src="../Script/main.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/algeria" rel="stylesheet">
+</head>
+<body>
+  <div id="header" class="">
+    <div class="header--container ">
+         <img id="logoHome" onclick="appearMenu()" src="../Image/logo.png" alt="">
+         <div class="header__title--logo">RD <br/> MANIA</div>
+         <nav>
+              <ul class="header__nav header__nav--up">
+                   <li> 
+                        <input class="header__nav--find" type="text" placeholder="Hãy tìm lại chính bạn!">
+                   </li>
+                   <li class="header__nav--icon"><i class="fa-solid fa-bell">
+                   </i></li>
+                   <li class="header__nav--titleSymbol ">Thông báo
+                        <div id="noti" class="">
+                             <div class="noti__header">
+                                  <ul>
+                                       <li class="noti__header--title">Thông báo</li>
+                                       <li class="noti__header--exit"><i class="fa-solid fa-x"></i></li>
+                                  </ul>
+                             </div>
+                             <div class="noti__content">Giới thiệu bản thân là việc trình bày thông tin cơ bản về bản thân mình cho người khác để họ hiểu thêm về chúng ta, đến từ đâu và một số thông tin quan trọng về cuộc sống và sở thích của cá nhân. Mục đích chính của</div>
+                             <div class="noti__submit "><input type="submit" value="Đến ngay nào!" href=""></div>
+                        </div>
+                   </li>
+                   <li class="header__nav--icon"><i class="fa-solid fa-cart-shopping"></i></i></li>
+                   <li class="header__nav--titleSymbol">Giỏ hàng</li>
+                   <li class="header__nav--icon " name="history-bill"><i class="fa-solid fa-money-bill"></i></li>
+                   <li class="header__nav--titleSymbol">Lịch sử</li>
+                   <li class="header__nav--icon fa-user--up" name='user'><i class=" fa-solid fa-user">
+                   </i></li>
+              </ul>
+              <ul class="header__nav--center">
+                   <li class="header__nav--menu "><a href="">Cửa hàng</a></li>
+                   <li class="header__nav--menu" id="sideBar__hidden"><a>Danh Mục</a>
+                        <div id="sideBar--main">
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title ">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList sideBar__dropList--first">
+                                            <li class="sideBar__dropList--sub"><a href=""> &#10148;	Dx</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList">
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList">
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList">
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList sideBar__dropList--last">
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                        </div>              
+                   </li>
+                   <li class="header__nav--menu"><a href="">Ưa thích</a></li>
+                   <li class="header__nav--menu"><a href="">Liên hệ</a></li>
+                   <li class="header__nav--menu"><a href="">Thêm</a></li>
+              </ul>             
+         </nav>
+    </div>
+    <ul class="header__nav--down">
+         <li class="header__nav--address ">Đại học Thủ Dầu Một
+              <img src="../Image/address.png" alt="LogoDaihocThuDauMot">
+         </li>
+         <li class="header__nav--premium">Premium</li>
+    </ul>
+  </div>
+  <div id="main--content">
+    <div id="sideBar-left">
+      <div class="sideBar-left__menu">&#9776; DANH MỤC</div>
+      <details class="sideBar-left__sub">
+        <summary class="sideBar-left__sub--title">TOP SẢN PHẨM TRONG THÁNG</summary>
+        <ul>
+          <li class="sideBar-left__sub--content0">Driver Zio - Henshin Belt của Kamen Rider Zi-O</li>
+          <li class="sideBar-left__sub--content0">Driver Decade - Henshin Belt của Kamen Rider Decade</li>
+          <li class="sideBar-left__sub--content0">Driver Build - Henshin Belt của Kamen Rider Build</li>
+          <li class="sideBar-left__sub--content0">Driver Ex-Aid - Henshin Belt của Kamen Rider Ex-Aid</li>
+        </ul>
+      </details>
+      <details class="sideBar-left__sub">
+        <summary class="sideBar-left__sub--title">S.H. Figuarts Kamen Rider</summary>
+        <ul>
+          <li class="sideBar-left__sub--content1">S.H. Figuarts Kamen Rider Zero-One</li>
+          <li class="sideBar-left__sub--content1">S.H. Figuarts Kamen Rider Saber</li>
+          <li class="sideBar-left__sub--content1">S.H. Figuarts Kamen Rider Zi-O</li>
+          <li class="sideBar-left__sub--content1">S.H. Figuarts Kamen Rider Build</li>
+        </ul>
+      </details>
+      <details class="sideBar-left__sub">
+        <summary class="sideBar-left__sub--title">Sản phẩm liên quan</summary>
+        <ul >
+          <li class="sideBar-left__sub--content2">Figurine Kamen Rider Zi-O</li>
+          <li class="sideBar-left__sub--content2">Áo Kamen Rider Ex-Aid</li>
+          <li class="sideBar-left__sub--content2">Túi Kamen Rider Build</li>
+          <li class="sideBar-left__sub--content2">Bộ sưu tập băng tải Henshin Belt Kamen Rider</li>
+        </ul>
+      </details>
+      <details class="sideBar-left__sub">
+        <summary class="sideBar-left__sub--title">Phụ kiện Kamen Rider</summary>
+        <ul>
+          <li class="sideBar-left__sub--content3">Chiến Đạo Zanbatô của Kamen Rider Saber</li>
+          <li class="sideBar-left__sub--content3">Xích Hắc Ám của Kamen Rider Decade</li>
+          <li class="sideBar-left__sub--content3">Thẻ Gashat Gamer của Kamen Rider Ex-Aid</li>
+          <li class="sideBar-left__sub--content3">Thẻ Progrise Key của Kamen Rider Zero-One</li>
+        </ul>
+      </details>
+    </div>
+    <div id="stores">
+      <section id="store">
+        <div id="stores">
+          <section class="store--sub">
+            <div class="productLists">
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Geats.jfif" alt="">
+                  </div>
+                  <div class="product__name">Thắt Lưng Cross_Z bandai</div>
+                  <div class="product__cost">5.320.000 VNĐ</div>
+                  <div class="product__cost--new">2.320.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Geats.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo FULL Belt Geats Bandai</div>
+                  <div class="product__cost">15.420.000 VNĐ</div>
+                  <div class="product__cost--new">10.320.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Zio.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+                  <div class="product__cost">8.200.000 VNĐ</div>
+                  <div class="product__cost--new">5.420.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/W.jfif" alt="">
+                  </div>
+                  <div class="product__name">Thắt Lưng W-Double Speacial</div>
+                  <div class="product__cost">4.530.000 VNĐ</div>
+                  <div class="product__cost--new">2.120.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Zio.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+                  <div class="product__cost">10.200.000 VNĐ</div>
+                  <div class="product__cost--new">8.430.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+            </div>
+            <div class="productLists">
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Cross_Z.jpg" alt="">
+                  </div>
+                  <div class="product__name">Thắt Lưng Cross_Z bandai</div>
+                  <div class="product__cost--new">2.320.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Geats.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo FULL Belt Geats Bandai</div>
+                  <div class="product__cost--new">10.320.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Zio.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+                  <div class="product__cost--new">5.420.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/W.jfif" alt="">
+                  </div>
+                  <div class="product__name">Thắt Lưng W-Double Speacial</div>
+                  <div class="product__cost--new">2.120.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Zio.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+                  <div class="product__cost--new">8.430.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+            </div>
+          </section>
+          <section class="store--sub">
+            <div class="productLists">
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Zio.jfif" alt="">
+                  </div>
+                  <div class="product__name">Thắt Lưng Cross_Z bandai</div>
+                  <div class="product__cost">5.320.000 VNĐ</div>
+                  <div class="product__cost--new">2.320.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Geats.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo FULL Belt Geats Bandai</div>
+                  <div class="product__cost">15.420.000 VNĐ</div>
+                  <div class="product__cost--new">10.320.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Zio.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+                  <div class="product__cost">8.200.000 VNĐ</div>
+                  <div class="product__cost--new">5.420.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/W.jfif" alt="">
+                  </div>
+                  <div class="product__name">Thắt Lưng W-Double Speacial</div>
+                  <div class="product__cost">4.530.000 VNĐ</div>
+                  <div class="product__cost--new">2.120.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              <div class="productList">
+                  <div class="product__image">
+                        <img src="../Image/listProduct1/Zio.jfif" alt="">
+                  </div>
+                  <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+                  <div class="product__cost">10.200.000 VNĐ</div>
+                  <div class="product__cost--new">8.430.000 VNĐ</div>
+                  <div class="product__buy">Mua ngay</div>
+              </div>
+              </div>
+              <div class="productLists">
+                <div class="productList">
+                    <div class="product__image">
+                          <img src="../Image/listProduct1/Cross_Z.jpg" alt="">
+                    </div>
+                    <div class="product__name">Thắt Lưng Cross_Z bandai</div>
+                    <div class="product__cost--new">2.320.000 VNĐ</div>
+                    <div class="product__buy">Mua ngay</div>
+                </div>
+                <div class="productList">
+                    <div class="product__image">
+                          <img src="../Image/listProduct1/Geats.jfif" alt="">
+                    </div>
+                    <div class="product__name">Combo FULL Belt Geats Bandai</div>
+                    <div class="product__cost--new">10.320.000 VNĐ</div>
+                    <div class="product__buy">Mua ngay</div>
+                </div>
+                <div class="productList">
+                    <div class="product__image">
+                          <img src="../Image/listProduct1/Zio.jfif" alt="">
+                    </div>
+                    <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+                    <div class="product__cost--new">5.420.000 VNĐ</div>
+                    <div class="product__buy">Mua ngay</div>
+                </div>
+                <div class="productList">
+                    <div class="product__image">
+                          <img src="../Image/listProduct1/W.jfif" alt="">
+                    </div>
+                    <div class="product__name">Thắt Lưng W-Double Speacial</div>
+                    <div class="product__cost--new">2.120.000 VNĐ</div>
+                    <div class="product__buy">Mua ngay</div>
+                </div>
+                <div class="productList">
+                    <div class="product__image">
+                          <img src="../Image/listProduct1/Zio.jfif" alt="">
+                    </div>
+                    <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+                    <div class="product__cost--new">8.430.000 VNĐ</div>
+                    <div class="product__buy">Mua ngay</div>
+                </div>
+              </div>
+            </section>
+        <div class="productLists">
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/Cross_Z.jpg" alt="">
+              </div>
+              <div class="product__name">Thắt Lưng Cross_Z bandai</div>
+              <div class="product__cost">5.320.000 VNĐ</div>
+              <div class="product__cost--new">2.320.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/Geats.jfif" alt="">
+              </div>
+              <div class="product__name">Combo FULL Belt Geats Bandai</div>
+              <div class="product__cost">15.420.000 VNĐ</div>
+              <div class="product__cost--new">10.320.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/Zio.jfif" alt="">
+              </div>
+              <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+              <div class="product__cost">8.200.000 VNĐ</div>
+              <div class="product__cost--new">5.420.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/W.jfif" alt="">
+              </div>
+              <div class="product__name">Thắt Lưng W-Double Speacial</div>
+              <div class="product__cost">4.530.000 VNĐ</div>
+              <div class="product__cost--new">2.120.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/Zio.jfif" alt="">
+              </div>
+              <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+              <div class="product__cost">10.200.000 VNĐ</div>
+              <div class="product__cost--new">8.430.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+        </div>
+        <div class="productLists">
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/Cross_Z.jpg" alt="">
+              </div>
+              <div class="product__name">Thắt Lưng Cross_Z bandai</div>
+              <div class="product__cost--new">2.320.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/Geats.jfif" alt="">
+              </div>
+              <div class="product__name">Combo FULL Belt Geats Bandai</div>
+              <div class="product__cost--new">10.320.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/Zio.jfif" alt="">
+              </div>
+              <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+              <div class="product__cost--new">5.420.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/W.jfif" alt="">
+              </div>
+              <div class="product__name">Thắt Lưng W-Double Speacial</div>
+              <div class="product__cost--new">2.120.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+          <div class="productList">
+              <div class="product__image">
+                    <img src="../Image/listProduct1/Zio.jfif" alt="">
+              </div>
+              <div class="product__name">Combo Thắt Lưng Kèm 3 Khóa </div>
+              <div class="product__cost--new">8.430.000 VNĐ</div>
+              <div class="product__buy">Mua ngay</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <footer id="contacts">
+    <div class="contact">
+        <div class="contact__title">KẾT NỐI VỚI CHÚNG TÔI</div>
+        <div class="contact__icon"> 
+              <div class="contact__icon--sub">
+                  <img id ="contact-tt" src="../Image/Social/tt.png" alt="">
+              </div>
+              <div class="contact__icon--sub">
+                  <img id ="contact-yt" src="../Image/Social/yt.jpg" alt="">
+              </div>
+              <div class="contact__icon--sub">
+                  <img id ="contact-tik" src="../Image/Social/tik.png" alt="">
+              </div>
+              <div class="contact__icon--sub">
+                  <img id ="contact-fb" src="../Image/Social/fb.png" alt="">
+              </div>
+        </div>
+    </div>
+    <div class="checkNoti">
+        <img src="../Image/Social/bct.png" alt="">
+    </div>
+  </footer>
+</body>
+<script>
+  var bl = false;
+     var insertFind__check = false;
+     var logoHome = document.getElementById('logoHome');
+     logoHome.addEventListener('click',function(){
+          window.location.href='http://127.0.0.1:5500/Html/main.html';
+     })
+     var logoHome = document.getElementsByClassName('header__title--logo')[0];
+     logoHome.addEventListener('click',function(){
+          window.location.href='http://127.0.0.1:5500/Html/main.html';
+     })
+     var clickMenulist = document.getElementsByClassName('header__nav--menu')[1];
+     var clickMenulist__check = false;
+     clickMenulist.addEventListener('click', function(){
+          if(!clickMenulist__check){
+               let appear = document.getElementById('sideBar__hidden');
+               appear.id='sideBar__appear';
+               clickMenulist__check = true;
+               appear = document.getElementById('sideBar__appear');
+               changeAppear = appear.querySelector('div');
+               changeAppear.style.width = '0px';
+               changeAppear.style.height = '0px';
+               changeAppear.style.transition = 'none';
+               
+               if(innerWidth >= 1024){
+                    setTimeout(function() {
+                         changeAppear.style.flexDirection = 'row';
+                         changeAppear.style.width = '1024px';
+                         changeAppear.style.height = '235px';
+                         changeAppear.style.transition = 'height 1s';
+                    }, 100);
+                    if(insertFind__check){
+                         let removeFind = document.getElementById('sideBar--main');
+                         let firstChild = removeFind.querySelector('input');
+                         firstChild.remove();
+                         insertFind__check = false;
+                    }
+               }
+               else if(innerWidth < 1024){
+                    setTimeout(function(){
+                         changeAppear.style.width = '25vw';
+                         changeAppear.style.height = '100vh';
+                         changeAppear.style.transition = 'width 0.5s linear';
+                         changeAppear.style.flexDirection = 'column';
+                    },100)
+                    if(insertFind__check === false){
+                         let insertFind = document.createElement('input');
+                         let isInserted = document.getElementById('sideBar--main');
+                         let firstChild = isInserted.firstChild;
+                         isInserted.insertBefore(insertFind, firstChild);
+                         insertFind.type='text';
+                         insertFind.id = 'sideBar__find';
+                         insertFind.placeholder ='  Ở đây có thứ bạn cần tìm...';
+                         insertFind__check = true;
+                    }
+               }
+               appear = document.getElementsByClassName('sideBar__dropList');
+               for(var i = 0; i < appear.length; i++){
+                    appear[i].style.transition='none';
+                    appear[i].style.border='none';
+               }
+               setTimeout(function() {
+                    for(var i = 0; i < appear.length; i++){
+                         appear[i].style.transition='border 1s ease 1s';
+                         if(innerWidth >= 1024 && i > 0){
+                              appear[i - 1].style.borderRight='1px solid #004643';
+                         }
+                         else if(innerWidth < 1024){
+                              // appear[i].style.borderTop='3px solid #004643';
+                         }
+                        
+                    }
+               }, 100);
+               let lowAppear = document.getElementsByClassName('sideBar__header--title');
+               for(let i = 0; i < lowAppear.length; i++){
+                    lowAppear[i].style.color = 'rgba(0,0,0,0)';
+                    lowAppear[i].style.background = 'rgba(0,0,0,0)';
+                    lowAppear[i].style.transition = 'none'
+               }
+               setTimeout(function(){
+                    for(let i = 0; i < lowAppear.length; i++){
+                    lowAppear[i].style.color = '#fffffe';
+                    lowAppear[i].style.background = '#004643';
+                    lowAppear[i].style.transition = 'background 0.5s linear 0.5s, color 0.5s linear 0.5s';
+               }
+               })
+               let lowAppear__sub = document.getElementsByClassName('sideBar__dropList--sub');
+               for(let i = 0; i < lowAppear__sub.length; i++){
+                    let childthis = lowAppear__sub[i].querySelector('a');
+                    childthis.style.color = 'rgba(0,0,0,0)';
+                    childthis.style.transition = 'none'
+               }
+               setTimeout(function(){
+                    for(let i = 0; i < lowAppear__sub.length; i++){
+                    let childthis = lowAppear__sub[i].querySelector('a');
+                    childthis.style.color = '#004643';
+                    childthis.style.transition = 'color 0.5s linear 1s ';
+                    childthis.addEventListener('mouseover', function(){
+                         this.style.color='rgb(0,70,67,0.3) ';
+                         this.style.transform='scaleX(1.1)';
+                    })
+                    childthis.addEventListener('mouseleave', function(){
+                         this.style.color='#004643';
+                         this.style.transform='none';
+                    })
+               }
+               },100)
+               let borderAppear = document.getElementById('sideBar--main');
+               borderAppear.style.transition='none';
+               borderAppear.style.border='none';
+               setTimeout(function(){
+                    borderAppear.style.border='5px solid #004643';
+                    borderAppear.style.transition='border 3s linear 0.5s';
+               })
+          }
+          else{
+               let hidden = document.getElementById('sideBar__appear');
+               hidden.id='sideBar__hidden';
+               clickMenulist__check = false;
+          }
+          
+          window.addEventListener('resize', function(){
+               let fixBug__appearMenu = document.getElementById('sideBar__appear');
+               fixBug__appearMenu.id='sideBar__hidden';
+               clickMenulist__check = false;
+          })
+          
+     })
+     function appearMenu() {
+          var parentElement = document.getElementsByClassName('header--container')[0];
+          var newDiv = document.createElement('div');
+          parentElement.appendChild(newDiv);
+          newDiv.classList.add('iconMenu');
+          newDiv.innerHTML = '&#9776;';
+          newDiv.id= "newMenu";
+          newDiv.addEventListener('click', clickMenu);
+          document.documentElement.style.setProperty('--set-Width', window.innerWidth + 'px');
+               var element = document.getElementsByClassName('header__nav--icon')[0]; 
+     }
+     function clickMenu() {
+          let clickMenu = document.getElementsByClassName('header__nav--icon');
+          for(let element of clickMenu){
+               element.style.display = 'block';
+          }
+          let noneMenu = document.getElementsByClassName('iconMenu')[0];
+          noneMenu.style.display ='none';
+     }
+     function deleteTag_br(){
+          let del = document.getElementsByClassName('header__title--logo')[0];
+          del.innerHTML = "RD MANIA";
+     }
+     function addTag_br(){
+          let add = document.getElementsByClassName('header__title--logo')[0];
+          add.innerHTML ="";
+          add.innerHTML = "RD <br/> MANIA";
+     }      
+     var notiControl = document.querySelector('.header__nav--titleSymbol');
+     var notiControl__check = false;
+     notiControl.addEventListener('click', function(){
+          if(!notiControl__check){
+               activeNoti();
+               notiControl__check = true;
+          }
+          else{
+               closeNoti();
+               notiControl__check = false;
+          }
+     })
+     var notiControl = document.querySelector('.header__nav--icon');
+     var notiControl__check = false;
+     notiControl.addEventListener('click', function(){
+          if(!notiControl__check){
+               activeNoti();
+               notiControl__check = true;
+          }
+          else{
+               closeNoti();
+               notiControl__check = false;
+          }
+     })
+     function activeNoti(){
+          let active = document.getElementById('noti');
+          active.classList.add('active');
+          active.style.transition='none';
+          active.style.width='0';
+          active.style.height='0';
+          setTimeout(function(){
+               active.style.transition='width 0.5s ease, height 0.5s ease';
+               active.style.width='300px';
+               active.style.height='250px';
+          },100)
+     }
+     function closeNoti(){
+          let close = document.getElementById('noti');
+          close.classList.remove('active');
+     }
+     let goSign = document.getElementsByClassName('fa-user')[0];
+     goSign.addEventListener('click', function(){
+          window.open('http://127.0.0.1:5500/Html/formSign.html', '_blank','width=470px,height=560px,resizable=no');
+     });
+     let navIcon__check = false;
+     var navIcon = document.getElementsByClassName('header__nav--icon');
+     var userIcon = document.getElementsByClassName('fa-user')[0];
+     var footSize = document.getElementById('contacts');
+     var changeSize__stores = document.getElementById('main--content');
+     var resizeElement = function(){
+          if(innerWidth < 768){
+              let changSide__sB_left = document.getElementById('sideBar-left');
+              changSide__sB_left.style.width = '100vw';
+              changSide__sB_left = document.getElementsByClassName('store--sub');
+              for(let i = 0; i < changSide__sB_left.length;i++){
+                changSide__sB_left[i].style.width = '100vw';
+              }
+              footSize.style.width='100vw';
+          }
+          else if(innerWidth < 1024){
+              let changSide__sB_left = document.getElementById('sideBar-left');
+              changSide__sB_left.style.width = '20%';
+              changSide__sB_left = document.getElementById('stores');
+              changSide__sB_left.style.width = '80%';
+              footSize.style.width='100vw';
+              changeSize__stores.style.width='100vw';
+              changSide__sB_left = document.getElementsByClassName('store--sub');
+              for(let i = 0; i < changSide__sB_left.length;i++){
+                changSide__sB_left[i].style.width = '100vw';
+              }
+          }
+          else{
+              let changSide__sB_left = document.getElementById('sideBar-left');
+              changSide__sB_left.style.width = '20%';
+              changSide__sB_left = document.getElementById('stores');
+              changSide__sB_left.style.width = '80%';
+              footSize.style.width='1024px';
+              changeSize__stores.style.width='1024px';
+              changSide__sB_left = document.getElementsByClassName('store--sub');
+              for(let i = 0; i < changSide__sB_left.length;i++){
+                changSide__sB_left[i].style.width = '100%';
+              }
+          }
+     }
+     window.addEventListener('load', resizeElement);  
+     window.addEventListener('resize', resizeElement); 
+     window.addEventListener('scroll', resizeElement); 
+     //premium Area
+
+     var premiumBtn = document.getElementsByClassName('header__nav--premium')[0];
+     var premiumBtn__check = false;
+     premiumBtn.addEventListener('click', function(){
+          if(!premiumBtn__check){
+               let pre = document.getElementsByTagName('body')[0];
+               pre.classList.add('premium')
+               pre = document.getElementById('header');
+               pre.classList.add('premium');
+               pre = document.getElementsByClassName('header__nav--menu');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               pre = document.getElementsByClassName('header__nav--address')[0];
+               pre.classList.add('premium');
+               pre = document.getElementsByClassName('fa-user')[0];
+               pre.classList.add('premium');
+               pre = document.getElementById('noti');
+               pre.classList.add('premium');
+               pre = document.getElementsByClassName('noti__header')[0];
+               pre.classList.add('premium');
+               pre = document.getElementsByClassName('noti__submit')[0];
+               pre.classList.add('premium');
+               pre = document.getElementById('contacts');
+               pre.classList.add('premium');
+               var logoHome = document.getElementById('logoHome');
+               logoHome.src = "../Image/logoPremium.png";
+               pre = document.getElementsByClassName('productList--container');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               pre = document.getElementsByClassName('productLists');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               pre = document.getElementsByClassName('productList');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               pre = document.getElementsByClassName('productList__title');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               pre = document.getElementsByClassName('product__cost');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               pre = document.getElementsByClassName('product__cost--new');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               pre = document.getElementsByClassName('product__buy');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               premiumBtn__check = true;
+          }
+          else{
+               let pre = document.getElementsByTagName('body')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementById('header');
+               pre.classList.remove('premium');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               pre = document.getElementsByClassName('header__nav--address')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementsByClassName('fa-user')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementById('noti');
+               pre.classList.remove('premium');
+               pre = document.getElementsByClassName('noti__header')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementsByClassName('noti__submit')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementById('contacts');
+               pre.classList.remove('premium');
+               pre = document.getElementsByClassName('productList--container');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               pre = document.getElementsByClassName('productLists');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               pre = document.getElementsByClassName('productList');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               pre = document.getElementsByClassName('productList__title');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               pre = document.getElementsByClassName('product__cost');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               pre = document.getElementsByClassName('product__cost--new');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               pre = document.getElementsByClassName('product__buy');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               var logoHome = document.getElementById('logoHome');
+               logoHome.src = "../Image/logo.png";
+               premiumBtn__check = false;
+               
+          }
+     })
+     var ClickSocial = document.getElementById('contact-tt');
+     ClickSocial.addEventListener('click', function(){
+          window.open('https://twitter.com/', '_blank');
+     })
+     ClickSocial = document.getElementById('contact-yt');
+     ClickSocial.addEventListener('click', function(){
+          window.open('https://www.youtube.com/channel/UCj9mwny6BBSE_UMjEeQg1NA', '_blank');
+     })
+     ClickSocial = document.getElementById('contact-tik');
+     ClickSocial.addEventListener('click', function(){
+          window.open('https://www.tiktok.com/@sbluevn', '_blank');
+     })
+     ClickSocial = document.getElementById('contact-fb');
+     ClickSocial.addEventListener('click', function(){
+          window.open('https://www.facebook.com/profile.php?id=100009217320529', '_blank');
+     })
+     const detailsElements = document.querySelectorAll('details');
+     detailsElements.forEach((details) => {
+          details.addEventListener('click', function() {
+               detailsElements.forEach((otherDetails) => {
+               if (otherDetails !== details) {
+               otherDetails.removeAttribute('open');
+               }
+          });
+     });
+    });
+    var indexMenu = -1;
+    var indexMenu__sub = -1;
+    var summaryStore = document.getElementsByClassName('sideBar-left__sub--title');
+    var zIndex = 1;
+    var storeZindex = document.getElementsByClassName('store--sub');
+    for(let i = 0; i < summaryStore.length; i++){
+      summaryStore[i].addEventListener('click',function(){
+        indexMenu = i;
+        var liStore = document.getElementsByClassName(`sideBar-left__sub--content${indexMenu}`);
+        setTimeout(function(){
+          for(let i = 0; i < liStore.length; i++){
+          liStore[i].addEventListener('click',function(){
+          indexMenu__sub = i;
+          let length;
+          if(indexMenu > 0){
+            length = summaryStore.length;
+          }else{
+            length = 0;
+          }
+          console.table([
+            { 'length': length },
+            { 'indexMenu__sub': indexMenu__sub }
+          ]);
+          console.table(length * indexMenu + indexMenu__sub);
+          })
+          }
+          
+        },1000)   
+      })
+    }
+    
+</script>
+</html>

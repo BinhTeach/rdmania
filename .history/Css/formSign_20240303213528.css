@@ -1,0 +1,41 @@
+#formSign{
+    display:none;
+    position: fixed;
+    top: -20px;
+    left: -1024px;
+    margin-right:100px;
+    background-color: rgb(211,211,211, 0.5);
+    z-index: 999;
+    width: 200vw;
+    height: 100vh;
+}
+.formSign__signIn{
+    
+}
+.formSign__signIn--title{
+
+}
+.formSign__signIn--name{
+
+}
+.signIn__title--name{
+
+}
+.formSign__signIn--pass{
+
+}
+.signIn__title--pass{
+
+}
+.formSign__signIn--rules{
+
+}
+.signIn__title--rules{
+
+}
+.formSign__signIn--submit{
+
+}
+.formSign__footer{
+
+}

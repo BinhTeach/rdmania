@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+}
+#formContainer{
+
+    background-color: #ABD1C6;
+    width: 100vw;
+    height: 100vh;
+}
+#formSign{
+    background-image:url(../Image/formSign.png);
+    width: 700px;
+    height: 1024px;
+    position: absolute;
+    margin:0 
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.formSign__signIn{
+    
+}
+.formSign__signIn--title{
+
+}
+.formSign__signIn--name{
+
+}
+.signIn__title--name{
+
+}
+.formSign__signIn--pass{
+
+}
+.signIn__title--pass{
+
+}
+.formSign__signIn--rules{
+
+}
+.signIn__title--rules{
+
+}
+.formSign__signIn--submit{
+
+}
+.formSign__footer{
+
+}

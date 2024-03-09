@@ -1,0 +1,41 @@
+body.premium{
+    color: gold;
+    background-color: #232121;
+}
+#header.premium{
+    color: gold;
+    background-color: rgb(39, 38, 38);
+}
+.header__nav--menu.premium:hover a{
+    color:gold;
+}
+.header__nav--menu.premium:hover {
+    background-color: rgb(84, 87, 89);
+}
+.header__nav--address.premium:hover{
+    color:gold;
+    background-color: rgb(84, 87, 89);
+}
+.header__nav--address.premium::after{
+    content: "";
+    transition: width 0.5s ease;
+    width: 0;
+    height: 0;
+    background-color: gold;
+    position: absolute;
+    left: 10%;
+    bottom:0;
+    z-index:0;
+}
+.header__nav--address:hover::after{
+    width: 80%;
+    height: 10%;
+}
+.fa-user.premium{
+    color: black;
+    background-color: gold;
+}
+.fa-user.premium:hover{
+    color: gold;
+    background-color: black;
+}

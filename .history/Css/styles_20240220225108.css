@@ -1,0 +1,44 @@
+#header nav{
+
+}
+ul li{
+    list-style: none;
+    font-size: 30px;
+}
+h1{
+    color: red;
+}
+nav{
+    align-content: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+ul{
+    display: flex;
+    
+}
+div{
+    flex-basis: 30%;
+}
+.box-1{
+    flex-wrap: wrap;
+    flex:1;
+}
+.box-2{
+    flex:0.5;
+}
+.box-3{
+    flex:1;
+}
+.hh{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+@media 1023 {
+    
+}% - (--size))

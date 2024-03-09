@@ -1,0 +1,143 @@
+body.premium{
+    color: gold;
+    background-color: #232121;
+}
+body #buy-noti.premium{
+    color: gold;
+    background-color: #232121;
+}
+#header.premium{
+    color: gold;
+    background-color: rgb(39, 38, 38);
+}
+.header__nav--menu.premium:hover a{
+    color:gold;
+}
+.header__nav--menu.premium:hover {
+    background-color: rgb(84, 87, 89);
+}
+.header__nav--address.premium:hover{
+    color:gold;
+    background-color: rgb(84, 87, 89);
+}
+.header__nav--address.premium::after{
+    content: "";
+    transition: width 0.5s ease;
+    width: 0;
+    height: 0;
+    background-color: gold;
+    position: absolute;
+    left: 10%;
+    bottom:0;
+    z-index:0;
+}
+.header__nav--address.premium:hover::after{
+    width: 80%;
+    height: 10%;
+}
+.fa-user.premium{
+    color: black;
+    background-color: gold;
+}
+.fa-user.premium:hover{
+    color: gold;
+    background-color: black;
+}
+.noti__header--title.premium{
+    color:gold;
+}
+#noti.premium{
+    background-color: #121212;
+}
+.noti__submit.premium input{
+    background-color: gold;
+    color: #121212;
+}
+.banner__main.premium{
+    background-color: #181717;
+}
+.banner__secondary.premium{
+    background-color: #181717;
+}
+.productList--container.premium{
+    background-color: #181717;
+}
+.productLists.premium{
+    background-color: #b2b0b0;;
+}
+.productList.premium{
+    background-color: #e9e9e9;;
+}
+.productList__title.premium{
+    background:linear-gradient( to bottom left, transparent 11% , gold 0%);
+    color: black;
+}
+.product__cost.premium{
+    color: #121212;
+}
+.product__cost--new.premium{
+    color: #181717;
+}
+.product__buy.premium{
+    background-color: #181717;
+}
+.commentTitle.premium{
+    background-color: #232121;
+}
+.comment--container.premium{
+    background-color: #181717;
+}
+.commentBox__header--name.premium{
+    color: gold;
+}
+.commentBox.premium{
+    background-color: #b2b0b0;
+}
+.commentBox__content.premium{
+    color:#121212;
+}
+.commentBox__rate.premium{
+    color: gold;
+}
+@media screen and (min-width: 768px) {
+    .rank--container.premium{
+    background: linear-gradient(to left, #F9D423, #FFFFFF, #4CB8C4);
+    }
+}
+@media screen and (max-width: 767.98px) {
+    .rank--container.premium{
+    background: linear-gradient(to top, #F9D423, #FFFFFF, #4CB8C4);
+    }
+}
+
+
+.info__title.premium{
+    color: gold;
+    border-bottom-color: gold;
+}
+#infosHigh.premium{
+    border-top: 5px solid #181717;
+    background: linear-gradient(to bottom, #000000, #979696);
+}
+#infosLow.premium details{
+    border-bottom-color: gold;
+}
+#infosLow.premium{
+    border-top: 5px solid #181717;
+    background: linear-gradient(to bottom, #000000, #7c7b7b);
+}
+.info__content.premium a{
+    color: gold;
+}
+#contacts.premium{
+    background-color: #121212;
+}
+#buy-noti.premium{
+    background-color: #121212;
+}
+.sideBar-left__sub--title.premium{
+    color: #262424;
+}
+.sideBar-left__menu.premium{
+    color: #121212;
+}

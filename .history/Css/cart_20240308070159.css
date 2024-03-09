@@ -1,0 +1,54 @@
+@import url('https://fonts.cdnfonts.com/css/algeria');
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: #ABD1C6;
+    
+}
+.cart{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.cart__image{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+}
+.cart__image img{
+    width: 100%;
+}
+.cart__title{
+    position: fixed;
+    top:50px;
+    left:110px;
+    
+}
+.cart__title--home{
+    font-family: 'Algeria', sans-serif;font-size: 25px;
+}
+.cart__title--cartHome{
+    position: fixed;
+    font-size: 25px;
+    left: 100px;
+}
+.cart__content{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+.cart__content--table{
+
+}
+.status{
+
+}
+.active{
+
+}
+.{
+
+}

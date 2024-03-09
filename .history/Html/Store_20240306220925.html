@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cửa hàng</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/store.css">
+    <link rel="stylesheet" href="../Css/premium.css">
+    <script src="https://kit.fontawesome.com/45c2fe20a1.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="../Image/logo.png">
+    <script src="../Script/main.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/algeria" rel="stylesheet">
+</head>
+<body>
+  <div id="header" class="">
+    <div class="header--container ">
+         <img id="logoHome" onclick="appearMenu()" src="../Image/logo.png" alt="">
+         <div class="header__title--logo">RD <br/> MANIA</div>
+         <nav>
+              <ul class="header__nav header__nav--up">
+                   <li> 
+                        <input class="header__nav--find" type="text" placeholder="Hãy tìm lại chính bạn!">
+                   </li>
+                   <li class="header__nav--icon"><i class="fa-solid fa-bell">
+                   </i></li>
+                   <li class="header__nav--titleSymbol ">Thông báo
+                        <div id="noti" class="">
+                             <div class="noti__header">
+                                  <ul>
+                                       <li class="noti__header--title">Thông báo</li>
+                                       <li class="noti__header--exit"><i class="fa-solid fa-x"></i></li>
+                                  </ul>
+                             </div>
+                             <div class="noti__content">Giới thiệu bản thân là việc trình bày thông tin cơ bản về bản thân mình cho người khác để họ hiểu thêm về chúng ta, đến từ đâu và một số thông tin quan trọng về cuộc sống và sở thích của cá nhân. Mục đích chính của</div>
+                             <div class="noti__submit "><input type="submit" value="Đến ngay nào!" href=""></div>
+                        </div>
+                   </li>
+                   <li class="header__nav--icon"><i class="fa-solid fa-cart-shopping"></i></i></li>
+                   <li class="header__nav--titleSymbol">Giỏ hàng</li>
+                   <li class="header__nav--icon " name="history-bill"><i class="fa-solid fa-money-bill"></i></li>
+                   <li class="header__nav--titleSymbol">Lịch sử</li>
+                   <li class="header__nav--icon fa-user--up" name='user'><i class=" fa-solid fa-user">
+                   </i></li>
+              </ul>
+              <ul class="header__nav--center">
+                   <li class="header__nav--menu "><a href="">Cửa hàng</a></li>
+                   <li class="header__nav--menu" id="sideBar__hidden"><a>Danh Mục</a>
+                        <div id="sideBar--main">
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title ">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList sideBar__dropList--first">
+                                            <li class="sideBar__dropList--sub"><a href=""> &#10148;	Dx</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList">
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList">
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList">
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                             <ul>
+                                  <li class="sideBar__header--element">
+                                       <div class="sideBar__header--title">Thắt Lưng Rider</div>
+                                       <ul class="sideBar__dropList sideBar__dropList--last">
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                            <li class="sideBar__dropList--sub"><a href="">&#10148;	</a></li>
+                                       </ul>
+                                  </li>
+                             </ul>
+                        </div>              
+                   </li>
+                   <li class="header__nav--menu"><a href="">Ưa thích</a></li>
+                   <li class="header__nav--menu"><a href="">Liên hệ</a></li>
+                   <li class="header__nav--menu"><a href="">Thêm</a></li>
+              </ul>             
+         </nav>
+    </div>
+    <ul class="header__nav--down">
+         <li class="header__nav--address ">Đại học Thủ Dầu Một
+              <img src="../Image/address.png" alt="LogoDaihocThuDauMot">
+         </li>
+         <li class="header__nav--premium">Premium</li>
+    </ul>
+  </div>
+  <div id="sideBar-left">
+    <details class="sideBar-left__sub">
+      <summary class="sideBar-left__sub--title">TOP SẢN PHẨM TRONG THÁNG</summary>
+      <ul class="sideBar-left__sub--title">
+        <li>Driver Zio - Henshin Belt của Kamen Rider Zi-O</li>
+        <li>Driver Decade - Henshin Belt của Kamen Rider Decade</li>
+        <li>Driver Build - Henshin Belt của Kamen Rider Build</li>
+        <li>Driver Ex-Aid - Henshin Belt của Kamen Rider Ex-Aid</li>
+      </ul>
+    </details>
+    <details class="sideBar-left__sub">
+      <summary class="sideBar-left__sub--title">S.H. Figuarts Kamen Rider</summary>
+      <ul class="sideBar-left__sub--title">
+        <li>S.H. Figuarts Kamen Rider Zero-One</li>
+        <li>S.H. Figuarts Kamen Rider Saber</li>
+        <li>S.H. Figuarts Kamen Rider Zi-O</li>
+        <li>S.H. Figuarts Kamen Rider Build</li>
+      </ul>
+    </details>
+    <details class="sideBar-left__sub">
+      <summary class="sideBar-left__sub--title">Sản phẩm liên quan</summary>
+      <ul class="sideBar-left__sub--title">
+        <li>Figurine Kamen Rider Zi-O</li>
+        <li>Áo Kamen Rider Ex-Aid</li>
+        <li>Túi Kamen Rider Build</li>
+        <li>Bộ sưu tập băng tải Henshin Belt Kamen Rider</li>
+      </ul>
+    </details>
+    <details class="sideBar-left__sub">
+      <summary class="sideBar-left__sub--title">Phụ kiện Kamen Rider</summary>
+      <ul class="sideBar-left__sub--title">
+        <li>Chiến Đạo Zanbatô của Kamen Rider Saber</li>
+        <li>Xích Hắc Ám của Kamen Rider Decade</li>
+        <li>Thẻ Gashat Gamer của Kamen Rider Ex-Aid</li>
+        <li>Thẻ Progrise Key của Kamen Rider Zero-One</li>
+      </ul>
+    </details>
+  </div>
+  <footer id="contacts">
+    <div class="contact">
+        <div class="contact__title">KẾT NỐI VỚI CHÚNG TÔI</div>
+        <div class="contact__icon"> 
+              <div class="contact__icon--sub">
+                  <img id ="contact-tt" src="../Image/Social/tt.png" alt="">
+              </div>
+              <div class="contact__icon--sub">
+                  <img id ="contact-yt" src="../Image/Social/yt.jpg" alt="">
+              </div>
+              <div class="contact__icon--sub">
+                  <img id ="contact-tik" src="../Image/Social/tik.png" alt="">
+              </div>
+              <div class="contact__icon--sub">
+                  <img id ="contact-fb" src="../Image/Social/fb.png" alt="">
+              </div>
+        </div>
+    </div>
+    <div class="checkNoti">
+        <img src="../Image/Social/bct.png" alt="">
+    </div>
+  </footer>
+</body>
+<script>
+  var bl = false;
+     var insertFind__check = false;
+     var logoHome = document.getElementById('logoHome');
+     logoHome.addEventListener('click',function(){
+          window.location.href='http://127.0.0.1:5500/Html/main.html';
+     })
+     var logoHome = document.getElementsByClassName('header__title--logo')[0];
+     logoHome.addEventListener('click',function(){
+          window.location.href='http://127.0.0.1:5500/Html/main.html';
+     })
+     var clickMenulist = document.getElementsByClassName('header__nav--menu')[1];
+     var clickMenulist__check = false;
+     clickMenulist.addEventListener('click', function(){
+          if(!clickMenulist__check){
+               let appear = document.getElementById('sideBar__hidden');
+               appear.id='sideBar__appear';
+               clickMenulist__check = true;
+               appear = document.getElementById('sideBar__appear');
+               changeAppear = appear.querySelector('div');
+               changeAppear.style.width = '0px';
+               changeAppear.style.height = '0px';
+               changeAppear.style.transition = 'none';
+               
+               if(innerWidth >= 1024){
+                    setTimeout(function() {
+                         changeAppear.style.flexDirection = 'row';
+                         changeAppear.style.width = '1024px';
+                         changeAppear.style.height = '235px';
+                         changeAppear.style.transition = 'height 1s';
+                    }, 100);
+                    if(insertFind__check){
+                         let removeFind = document.getElementById('sideBar--main');
+                         let firstChild = removeFind.querySelector('input');
+                         firstChild.remove();
+                         insertFind__check = false;
+                    }
+               }
+               else if(innerWidth < 1024){
+                    setTimeout(function(){
+                         changeAppear.style.width = '25vw';
+                         changeAppear.style.height = '100vh';
+                         changeAppear.style.transition = 'width 0.5s linear';
+                         changeAppear.style.flexDirection = 'column';
+                    },100)
+                    if(insertFind__check === false){
+                         let insertFind = document.createElement('input');
+                         let isInserted = document.getElementById('sideBar--main');
+                         let firstChild = isInserted.firstChild;
+                         isInserted.insertBefore(insertFind, firstChild);
+                         insertFind.type='text';
+                         insertFind.id = 'sideBar__find';
+                         insertFind.placeholder ='  Ở đây có thứ bạn cần tìm...';
+                         insertFind__check = true;
+                    }
+               }
+               appear = document.getElementsByClassName('sideBar__dropList');
+               for(var i = 0; i < appear.length; i++){
+                    appear[i].style.transition='none';
+                    appear[i].style.border='none';
+               }
+               setTimeout(function() {
+                    for(var i = 0; i < appear.length; i++){
+                         appear[i].style.transition='border 1s ease 1s';
+                         if(innerWidth >= 1024 && i > 0){
+                              appear[i - 1].style.borderRight='1px solid #004643';
+                         }
+                         else if(innerWidth < 1024){
+                              // appear[i].style.borderTop='3px solid #004643';
+                         }
+                        
+                    }
+               }, 100);
+               let lowAppear = document.getElementsByClassName('sideBar__header--title');
+               for(let i = 0; i < lowAppear.length; i++){
+                    lowAppear[i].style.color = 'rgba(0,0,0,0)';
+                    lowAppear[i].style.background = 'rgba(0,0,0,0)';
+                    lowAppear[i].style.transition = 'none'
+               }
+               setTimeout(function(){
+                    for(let i = 0; i < lowAppear.length; i++){
+                    lowAppear[i].style.color = '#fffffe';
+                    lowAppear[i].style.background = '#004643';
+                    lowAppear[i].style.transition = 'background 0.5s linear 0.5s, color 0.5s linear 0.5s';
+               }
+               })
+               let lowAppear__sub = document.getElementsByClassName('sideBar__dropList--sub');
+               for(let i = 0; i < lowAppear__sub.length; i++){
+                    let childthis = lowAppear__sub[i].querySelector('a');
+                    childthis.style.color = 'rgba(0,0,0,0)';
+                    childthis.style.transition = 'none'
+               }
+               setTimeout(function(){
+                    for(let i = 0; i < lowAppear__sub.length; i++){
+                    let childthis = lowAppear__sub[i].querySelector('a');
+                    childthis.style.color = '#004643';
+                    childthis.style.transition = 'color 0.5s linear 1s ';
+                    childthis.addEventListener('mouseover', function(){
+                         this.style.color='rgb(0,70,67,0.3) ';
+                         this.style.transform='scaleX(1.1)';
+                    })
+                    childthis.addEventListener('mouseleave', function(){
+                         this.style.color='#004643';
+                         this.style.transform='none';
+                    })
+               }
+               },100)
+               let borderAppear = document.getElementById('sideBar--main');
+               borderAppear.style.transition='none';
+               borderAppear.style.border='none';
+               setTimeout(function(){
+                    borderAppear.style.border='5px solid #004643';
+                    borderAppear.style.transition='border 3s linear 0.5s';
+               })
+          }
+          else{
+               let hidden = document.getElementById('sideBar__appear');
+               hidden.id='sideBar__hidden';
+               clickMenulist__check = false;
+          }
+          
+          window.addEventListener('resize', function(){
+               let fixBug__appearMenu = document.getElementById('sideBar__appear');
+               fixBug__appearMenu.id='sideBar__hidden';
+               clickMenulist__check = false;
+          })
+          
+     })
+     function deleteTag_br(){
+          let del = document.getElementsByClassName('header__title--logo')[0];
+          del.innerHTML = "RD MANIA";
+     }
+     function addTag_br(){
+          let add = document.getElementsByClassName('header__title--logo')[0];
+          add.innerHTML ="";
+          add.innerHTML = "RD <br/> MANIA";
+     }      
+     var notiControl = document.querySelector('.header__nav--titleSymbol');
+     var notiControl__check = false;
+     notiControl.addEventListener('click', function(){
+          if(!notiControl__check){
+               activeNoti();
+               notiControl__check = true;
+          }
+          else{
+               closeNoti();
+               notiControl__check = false;
+          }
+     })
+     var notiControl = document.querySelector('.header__nav--icon');
+     var notiControl__check = false;
+     notiControl.addEventListener('click', function(){
+          if(!notiControl__check){
+               activeNoti();
+               notiControl__check = true;
+          }
+          else{
+               closeNoti();
+               notiControl__check = false;
+          }
+     })
+     function activeNoti(){
+          let active = document.getElementById('noti');
+          active.classList.add('active');
+          active.style.transition='none';
+          active.style.width='0';
+          active.style.height='0';
+          setTimeout(function(){
+               active.style.transition='width 0.5s ease, height 0.5s ease';
+               active.style.width='300px';
+               active.style.height='250px';
+          },100)
+     }
+     function closeNoti(){
+          let close = document.getElementById('noti');
+          close.classList.remove('active');
+     }
+     let goSign = document.getElementsByClassName('fa-user')[0];
+     goSign.addEventListener('click', function(){
+          window.open('http://127.0.0.1:5500/Html/formSign.html', '_blank','width=470px,height=560px,resizable=no');
+     });
+     let navIcon__check = false;
+     var navIcon = document.getElementsByClassName('header__nav--icon');
+     var userIcon = document.getElementsByClassName('fa-user')[0];
+     var footSize = document.getElementById('contacts');
+     var resizeElement = function(){
+          if(innerWidth < 1024){
+               footSize.style.width='100vw';
+          }
+          else{
+               footSize.style.width='1024px';
+          }
+     }
+     window.addEventListener('load', resizeElement);  
+     window.addEventListener('resize', resizeElement); 
+     window.addEventListener('scroll', resizeElement); 
+     //premium Area
+
+     var premiumBtn = document.getElementsByClassName('header__nav--premium')[0];
+     var premiumBtn__check = false;
+     premiumBtn.addEventListener('click', function(){
+          if(!premiumBtn__check){
+               let pre = document.getElementsByTagName('body')[0];
+               pre.classList.add('premium')
+               pre = document.getElementById('header');
+               pre.classList.add('premium');
+               pre = document.getElementsByClassName('header__nav--menu');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.add('premium');
+               }
+               pre = document.getElementsByClassName('header__nav--address')[0];
+               pre.classList.add('premium');
+               pre = document.getElementsByClassName('fa-user')[0];
+               pre.classList.add('premium');
+               pre = document.getElementById('noti');
+               pre.classList.add('premium');
+               pre = document.getElementsByClassName('noti__header')[0];
+               pre.classList.add('premium');
+               pre = document.getElementsByClassName('noti__submit')[0];
+               pre.classList.add('premium');
+               pre = document.getElementById('contacts');
+               pre.classList.add('premium');
+               var logoHome = document.getElementById('logoHome');
+               logoHome.src = "../Image/logoPremium.png";
+               premiumBtn__check = true;
+          }
+          else{
+               let pre = document.getElementsByTagName('body')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementById('header');
+               pre.classList.remove('premium');
+               for(let i = 0; i < pre.length; i++){
+                    pre[i].classList.remove('premium');
+               }
+               pre = document.getElementsByClassName('header__nav--address')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementsByClassName('fa-user')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementById('noti');
+               pre.classList.remove('premium');
+               pre = document.getElementsByClassName('noti__header')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementsByClassName('noti__submit')[0];
+               pre.classList.remove('premium');
+               pre = document.getElementById('contacts');
+               pre.classList.remove('premium');
+               var logoHome = document.getElementById('logoHome');
+               logoHome.src = "../Image/logo.png";
+               premiumBtn__check = false;
+               
+          }
+     })
+     var ClickSocial = document.getElementById('contact-tt');
+     ClickSocial.addEventListener('click', function(){
+          window.open('https://twitter.com/', '_blank');
+     })
+     ClickSocial = document.getElementById('contact-yt');
+     ClickSocial.addEventListener('click', function(){
+          window.open('https://www.youtube.com/channel/UCj9mwny6BBSE_UMjEeQg1NA', '_blank');
+     })
+     ClickSocial = document.getElementById('contact-tik');
+     ClickSocial.addEventListener('click', function(){
+          window.open('https://www.tiktok.com/@sbluevn', '_blank');
+     })
+     ClickSocial = document.getElementById('contact-fb');
+     ClickSocial.addEventListener('click', function(){
+          window.open('https://www.facebook.com/profile.php?id=100009217320529', '_blank');
+     })
+     const detailsElements = document.querySelectorAll('details');
+     detailsElements.forEach((details) => {
+          details.addEventListener('click', function() {
+               detailsElements.forEach((otherDetails) => {
+               if (otherDetails !== details) {
+               otherDetails.removeAttribute('open');
+               }
+          });
+     });
+    });
+</script>
+</html>

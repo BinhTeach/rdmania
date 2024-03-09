@@ -1,0 +1,11 @@
+var changeSize__logoPoli = document.getElementById('poli');
+    var handle__LogoPoli = function(){
+        if(innerWidth < 1024){
+            changeSize__logoPoli.style.width='100%';
+        }
+        else{
+            changeSize__logoPoli.style.width='1024px';
+        }
+    }
+    window.addEventListener('load', handle__LogoPoli);
+    window.addEventListener('resize', handle__LogoPoli);

@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+}
+#formContainer{
+    background-color: #ABD1C6;
+    width: 100vw;
+    height: 100vh; display: flex;justify-content: center;
+    align-items: center;
+    
+}
+#formSign{
+    background-image:url(../Image/formSign.png);
+    width: 461px;
+    height: 555px;
+    display: flex;
+    position: relative;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+
+}
+.formSign__signIn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    margin-top:150px;
+}
+.formSign__signIn--title{
+    position: absolute;
+    left: 45px;
+    text-align: center;
+    top:180px;
+    min-width: 85px;
+    font-weight: 700;
+    color: #156662;
+    padding-bottom: 5px;
+    border-bottom: #004643 2px solid;
+}
+.formSign__signIn--name{
+    margin-left:-50px;
+    margin-top:10px;
+    color: #156662;
+}
+.formSign__signIn--name input{
+    width: 130%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: none;
+    padding-left: 10px;
+}
+.signIn__title--name{
+    font-weight: 600;
+}
+.formSign__signIn--rules{
+    display: flex;
+}
+.signIn__title--rules{
+    margin-left:5px;
+}
+.formSign__signIn--submit{
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #157c5a;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor:pointer;
+}
+.formSign__signIn--submit:hover{
+    transform: scale(1.1);
+}
+.formSign__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#changeSignin{
+    color: #004643;
+    cursor: pointer;
+    font-weight: 600;
+}
+/* signUp */
+.formSign__signUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    margin-top:180px;
+}
+.formSign__signUp--title{
+    position: absolute;
+    left: 220px;
+    justify-content: center;
+    text-align: center;
+    min-width: 85px;
+    top:180px;
+    font-weight: 700;
+    color: #156662;
+    padding-bottom: 5px;
+    border-bottom: #004643 2px solid;
+}
+.formSign__signUp--name{
+    margin-left:-50px;
+    margin-top:10px;
+    color: #156662;
+}
+.formSign__signUp--name input{
+    width: 130%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: none;
+    padding-left: 10px;
+}
+.signUp__title--name{
+    font-weight: 600;
+}
+.formSign__signUp--moreInfo{
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    width: 130%;
+    margin-top:10px;
+}
+
+.formSign__signUp--moreInfo input{
+    width: 113px;
+    height: 25px;
+    border-radius: 5px;
+}
+.formSign__signUp--moreInfo input[type='email']{
+    margin-right: 5px;
+}
+.formSign__signUp--moreInfo input[type='number']{
+    margin-left: 5px;
+}
+.formSign__signUp--rules{
+    display: flex;
+    margin-top: 10px;
+}
+.signUp__title--rules{
+    margin-left:5px;
+}
+.formSign__signUp--submit{
+    margin-top: 10px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #157c5a;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor:pointer;
+}
+.formSign__signUp--submit:hover{
+    transform: scale(1.1);
+}
+.signUp__title--name{}
+.formSign__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}

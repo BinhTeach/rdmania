@@ -1,0 +1,9 @@
+body{
+    background-color: #212121;
+}
+#header{
+    margin: 0 auto;
+    width: 60%;
+    background-color: rgb(60, 25, 25);
+    height: 250px;
+}

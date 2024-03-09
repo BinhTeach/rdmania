@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/45c2fe20a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Css/store.css">
+</head>
+<body>
+    <div class="bannerSlide">
+        <div class="bannerSlide__images">
+            <img class="bannerSlide__image" src="../Image/slide/slider1.jfif" alt="">
+            <img class="bannerSlide__image" src="../Image/slide/slider2.jfif" alt="">
+            <img class="bannerSlide__image" src="../Image/slide/slider3.jfif" alt="">
+            <img class="bannerSlide__image" src="../Image/slide/slider4.jfif" alt="">
+        </div>
+        <div class="bannerSilde__btn">
+            <div class="bannerSlide__btn btnSlide--left"><i class="fa-solid fa-circle-chevron-left"></i></div>
+            <div class="bannerSlide__btn btnSlide--right"><i class="fa-solid fa-circle-chevron-right"></i></div>
+        </div>
+        <div class="bannerSlide__index">
+            <div class="bannerSlide__index--sub"></div>
+            <div class="bannerSlide__index--sub"></div>
+            <div class="bannerSlide__index--sub"></div>
+            <div class="bannerSlide__index--sub"></div>
+        </div>
+    </div>
+</body>
+<script>
+    var i = 0;    
+    var lengthImage = document.getElementsByClassName('bannerSlide__image').length;
+    var handleSlide = function() {
+        console.log('i before: ', i);
+        let move = document.getElementsByClassName('bannerSlide__images')[0];
+        let widthImage = move.offsetWidth;
+        console.log(widthImage * i);
+        move.style.transform = `translateX(${-1 * i * widthImage}px)`;
+        if (i == lengthImage - 1) {
+        i = 0;
+        } else {
+        i++;
+        }
+}
+    var handleSlide__interval = setInterval(handleSlide, 3000);
+    var handleSlide__left = function(){
+        console.log('i after',i);
+        let move = document.getElementsByClassName('bannerSlide__images')[0];
+        let widthImage = move.offsetWidth;
+        console.log(widthImage * i);
+        move.style.transform = `translateX(${-1 * i * widthImage}px)`;
+    }
+    
+    var btnSlide__left = document.querySelector('.btnSlide--left');
+    btnSlide__left.addEventListener('click', function(){
+        clearInterval(handleSlide__interval);
+        if(i == 0){
+            i = lengthImage - 1;
+            console.log('lengthImage', i);
+            handleSlide__left();
+        }
+        else{
+            i--;
+            handleSlide__left();
+        }
+        setTimeout(function(){
+            handleSlide__interval = setInterval(handleSlide, 3000);
+        },300);
+    })
+    var btnSlide__right = document.querySelector('.btnSlide--right');
+    btnSlide__right.addEventListener('click', function(){
+        clearInterval(handleSlide__interval);
+        setTimeout(function(){
+if(i == lengthImage - 1){
+            i = 0;
+            handleSlide();
+        }
+        else{
+            
+            console.log('i but =', i);
+            handleSlide();
+        }
+        },1000)
+        
+        setTimeout(function(){
+            handleSlide__interval = setInterval(handleSlide, 3000);
+        },300);
+    })
+    
+</script>
+</html>

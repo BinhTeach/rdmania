@@ -1,0 +1,203 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+@import url('https://fonts.cdnfonts.com/css/algeria');
+ul{
+    list-style: none;
+}
+@media screen and (max-width: 767.89px) {
+    .header__title--logo{
+        padding-bottom: 5px;
+        width: 50px;
+    }
+    nav ul li{
+        display:none;
+    }
+    .header__nav--icon{
+        margin-top: 100px;
+    }
+    #header{
+        padding-left: 30px;
+        padding-top:20px;
+        display:flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .header__nav--up{
+        height: 100px;
+        width: 100%;
+        display: none;
+    }
+    .header__nav--down li{
+        display: none;
+    }
+}
+.iconMenu{
+    font-size: 30px;
+    color:white;
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+    cursor:pointer;
+    position: absolute;
+    left: 300px;
+    top
+}
+@media screen and (min-width: 768px) and (max-width:1023.98px) {
+    .header__title--logo{
+        padding-bottom: 5px;
+    }
+    nav ul.header__nav--up li input,.header__nav--menu:nth-child(3), .header__nav--menu:nth-child(5){
+        display:none;
+    }
+    .header__nav--icon, .header__nav--menu{
+        margin-left: 20px;
+    }
+    .header__nav--down li{
+        display: none;
+    }
+    .iconMenu{
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .iconMenu{
+        display: none;
+    }
+}
+body{
+    background-color: #ABD1C6;
+    color: #fffffe;
+}
+
+#header{
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1024px;
+    background-color: #004643;
+    height: 175px;
+}
+.header--container{
+    display: flex;
+}
+.header--container img{
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+nav{
+    display:flex;
+    flex-direction: column;
+}
+.header__title--logo{
+    font-family: 'Algeria', sans-serif;
+    align-self: center;
+    font-size: 33px;
+    text-align: center;
+    padding-top: 15px;
+    line-height: 1.05;
+}
+.header__nav{
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+    align-items: center;
+}
+.header__nav--up{
+    padding-top:10px;
+}
+.header__nav>li{
+    padding:5px;
+    text-wrap:nowrap;
+}
+.header__nav li:nth-child(even){
+    padding-left: 12px;
+}
+.header__nav--find{
+    border-radius: 30px;
+    flex: 1;
+    width: 390px;
+    height: 35px;
+}
+.header__nav--find::placeholder{
+    padding-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header__nav--icon{
+    font-size:20px;
+    cursor:pointer;
+}
+.header__nav--titleSymbol{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor:pointer;
+    font-weight: 700;
+}
+.fa-user{
+    font-size: 40px;
+    background-color: #3a7463;
+    padding: 2px 7px;
+    border-radius: 10%;
+}
+.header__nav--center{
+    display:flex;
+}
+.header__nav--menu{
+    padding: 0 15px;
+    padding-top: 10px;
+    border-radius: 30px;
+    background-color:#D3D3D3;
+    width: 80px;
+    height: 23px;
+    text-align:center;
+    margin:10px;
+}
+.header__nav--menu:nth-child(1){
+    margin-left: 40px;
+}
+.header__nav--menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2f5535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav--down{
+    display:flex;
+    justify-content: space-between;
+}
+.header__nav--address{
+    padding: 0 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #D3D3D3;
+    color:#2f5535;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 18px;
+}
+.header__nav--premium{
+    height:40px;
+    background-color: #F9BC60;
+    color: #fffffe;
+    font-weight: 600;
+    margin-right:10px;
+    padding:0 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor:cell;
+}

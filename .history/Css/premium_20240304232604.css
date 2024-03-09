@@ -1,0 +1,12 @@
+body.premium{
+    color: gold;
+    background-color: #232121;
+}
+#header.premium{
+    color: gold;
+    background-color: rgb(39, 38, 38);
+}
+.header__nav--menu.premium:hover a{
+    color:gold;
+    background-color: ;
+}
